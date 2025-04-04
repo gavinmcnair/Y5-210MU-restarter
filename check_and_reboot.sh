@@ -1,8 +1,9 @@
-#! /opt/homebrew/bin/python3
+#!/usr/bin/python3
 
 import requests
 import time
 import socket
+from datetime import datetime
 
 # Constants for router login and reboot
 ROUTER_URL = 'https://192.168.0.1'
@@ -10,6 +11,9 @@ LOGIN_ENDPOINT = '/web/v1/user/login'
 REBOOT_ENDPOINT = '/web/v1/setting/system/maintenance/reboot'
 USERNAME = 'user'
 PASSWORD = 'PASSWORDHERE'
+
+# Initialize reboot counter
+reboot_count = 0
 
 # Function to check internet connectivity
 def is_internet_active():
@@ -21,7 +25,8 @@ def is_internet_active():
         return False
 
 # Function to log in to the router and execute a reboot
-def reboot_router():
+def login_and_reboot():
+    global reboot_count
     with requests.Session() as session:
         # Login data
         login_data = {
@@ -57,21 +62,23 @@ def reboot_router():
                 verify=False
             )
 
+            reboot_count += 1
             if reboot_response.status_code == 200:
-                print("Router reboot initiated successfully.")
+                print(f"Router reboot initiated successfully at {datetime.now()}. Reboot count: {reboot_count}.")
             else:
-                print("Failed to initiate router reboot.")
+                print(f"Failed to initiate router reboot at {datetime.now()}.")
+
         else:
-            print("Login failed.")
+            print(f"Login failed at {datetime.now()}.")
 
 # Main function that checks internet connectivity and reboots if necessary
 def main():
     while True:
         if not is_internet_active():
-            print("Internet is down. Attempting to reboot the router...")
-            reboot_router()
+            print(f"\nInternet is down. Attempting to reboot the router at {datetime.now()}...")
+            login_and_reboot()
         else:
-            print("Internet is active.")
+            print('.', end='', flush=True)  # Print a single dot if internet is active
         
         # Wait 60 seconds before checking again
         time.sleep(60)
