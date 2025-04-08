@@ -15,6 +15,9 @@ PASSWORD = 'PASSWORDHERE'
 # Initialize reboot counter
 reboot_count = 0
 
+# Delay counter after a reboot
+reboot_delay_iterations = 0
+
 # Function to check internet connectivity
 def is_internet_active():
     try:
@@ -65,20 +68,29 @@ def login_and_reboot():
             reboot_count += 1
             if reboot_response.status_code == 200:
                 print(f"Router reboot initiated successfully at {datetime.now()}. Reboot count: {reboot_count}.")
+                return True
             else:
                 print(f"Failed to initiate router reboot at {datetime.now()}.")
 
         else:
             print(f"Login failed at {datetime.now()}.")
+    
+    return False
 
 # Main function that checks internet connectivity and reboots if necessary
 def main():
+    global reboot_delay_iterations
     while True:
-        if not is_internet_active():
-            print(f"\nInternet is down. Attempting to reboot the router at {datetime.now()}...")
-            login_and_reboot()
+        if reboot_delay_iterations > 0:
+            print('R', end='', flush=True)
+            reboot_delay_iterations -= 1
         else:
-            print('.', end='', flush=True)  # Print a single dot if internet is active
+            if not is_internet_active():
+                print(f"\nInternet is down. Attempting to reboot the router at {datetime.now()}...")
+                if login_and_reboot():
+                    reboot_delay_iterations = 3  # Set delay iterations after a reboot
+            else:
+                print('.', end='', flush=True)  # Print a single dot if internet is active
         
         # Wait 60 seconds before checking again
         time.sleep(60)

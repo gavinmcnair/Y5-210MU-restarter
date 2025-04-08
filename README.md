@@ -13,3 +13,11 @@ The script included needs to have YOUR username and password for the interface. 
 I run mine on a Raspberry Pi which also has home assistant inside a backgrounded tmux session but it could be packaged properly.
 
 Please give it a try and give feedback.
+
+## Contributing
+
+Please raise and issue or a PR if you have improved this.
+
+## New features
+
+   * Reboot delay. On reboot stop timer for 3 iterations and print R to indicate rebooting. We dont want to reboot before the router comes online
