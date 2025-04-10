@@ -6,6 +6,8 @@ The Y5-210MU is a fabulous router created by Greenpacket let down only because i
 
 Three deny there is an issue but it has been experienced by many people. Most importantly this is entirely a software issue and is totally fixable by Three and Greenpacket if they had the desire to. Its probably only 1 or 2 lines of bad code.
 
+Inside the logs directory is a dump of the logs in case Three or Greenpacket want to fix the issue. (Don't worry. It contains no passwords)
+
 ## Solution
 
 The script included needs to have YOUR username and password for the interface. It checks the internet connectivity and on failure it issues a reboot via the API.
