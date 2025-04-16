@@ -22,7 +22,7 @@ Please give it a try and give feedback.
 
 Ensure Python is installed. The script only needs the standard libraries. Ensure that `check_and_reboot.py` has been added and execute it.
 
-You might need to change the first line if your python executable is in another location or is just named `python`
+You might need to change the first line if your python executable is in another location or is just named `python` and you will also need to replace the username and password with your own.
 
 
 ### Example of execution
