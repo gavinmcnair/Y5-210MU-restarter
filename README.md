@@ -18,6 +18,35 @@ I run mine on a Raspberry Pi which also has home assistant inside a backgrounded
 
 Please give it a try and give feedback.
 
+## How to run
+
+Ensure Python is installed. The script only needs the standard libraries. Ensure that `check_and_reboot.py` has been added and execute it.
+
+You might need to change the first line if your python executable is in another location or is just named `python`
+
+
+### Example of execution
+
+```
+./check_and_reboot.py
+```
+
+or 
+
+```
+python ./check_and_reboot.py
+```
+
+### Running inside tmux
+
+To run in `tmux` ensure it is installed and run
+
+```
+tmux new-session -d -s check_and_reboot './check_and_reboot.py >> restart.log &'
+```
+
+The tmux docs are available [here](https://github.com/tmux/tmux/wiki) and let you connect to and alter the session
+
 ## Output
 
 Here is an excerpt of log output showing the issue and how frequent it is. Sometimes i can have 5 dropouts in a day which would normally fail to recover
