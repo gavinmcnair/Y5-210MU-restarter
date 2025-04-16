@@ -1,4 +1,4 @@
-# 3 (Three) Outdoor router Y5-210MU Restarter
+# 3 (Three) / Greenpacket Outdoor router Y5-210MU Restarter
 
 ## Summary
 
