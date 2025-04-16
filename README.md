@@ -8,7 +8,16 @@ Three deny there is an issue but it has been experienced by many people. Most im
 
 Inside the logs directory is a dump of the logs in case Three or Greenpacket want to fix the issue. (Don't worry. It contains no passwords)
 
-One of the many threads on Three's website about the problem is [here](https://community.three.co.uk/t5/Broadband/5G-Outdoor-hub-Y5-210MU-connection-Issue/m-p/41466)
+Here are some of the threads about the problem 
+
+   * https://community.three.co.uk/t5/Broadband/5G-Outdoor-hub-Y5-210MU-connection-Issue/m-p/41466
+   * https://community.three.co.uk/t5/Broadband/Drop-out-problems-with-new-Three-outdoor-hub-Y5-210MU/m-p/42718
+   * https://www.ispreview.co.uk/talk/threads/drop-out-problems-with-new-three-outdoor-hub-y5-210mu.42890/
+   * https://www.ispreview.co.uk/talk/threads/three-outdoor-hub-greenpacket-y5-210mu-firmware-questions.42863/
+   * https://www.ispreview.co.uk/talk/threads/new-three-outdoor-hub-router.42464/
+   * https://www.reddit.com/r/UKmobilenetworks/comments/1g9cvy0/3_home_broadband_outdoor_hub_tried_to_buy_but/
+   * https://community.three.co.uk/t5/Broadband/Outdoor-hub-drop-outs/m-p/48402
+
 
 ## Solution
 
