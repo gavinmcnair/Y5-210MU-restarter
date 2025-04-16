@@ -8,6 +8,8 @@ Three deny there is an issue but it has been experienced by many people. Most im
 
 Inside the logs directory is a dump of the logs in case Three or Greenpacket want to fix the issue. (Don't worry. It contains no passwords)
 
+One of the many threads on Three's website about the problem is [here](https://community.three.co.uk/t5/Broadband/5G-Outdoor-hub-Y5-210MU-connection-Issue/m-p/41466)
+
 ## Solution
 
 The script included needs to have YOUR username and password for the interface. It checks the internet connectivity and on failure it issues a reboot via the API.
