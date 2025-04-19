@@ -10,9 +10,10 @@ Three deny there is an issue but it has been experienced by many people. Most im
 
 Inside the logs directory is a dump of the logs in case Three or Greenpacket want to fix the issue. (Don't worry. It contains no passwords)
 
-Here are some of the threads about the problem 
+If you have tried this script and it works for you please put a like on the comment in this thread https://community.three.co.uk/t5/Broadband/5G-Outdoor-hub-Y5-210MU-connection-Issue/m-p/41466
 
-   * https://community.three.co.uk/t5/Broadband/5G-Outdoor-hub-Y5-210MU-connection-Issue/m-p/41466
+Here are some mode  threads about the problem 
+
    * https://community.three.co.uk/t5/Broadband/Drop-out-problems-with-new-Three-outdoor-hub-Y5-210MU/m-p/42718
    * https://www.ispreview.co.uk/talk/threads/drop-out-problems-with-new-three-outdoor-hub-y5-210mu.42890/
    * https://www.ispreview.co.uk/talk/threads/three-outdoor-hub-greenpacket-y5-210mu-firmware-questions.42863/
