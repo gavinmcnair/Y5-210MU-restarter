@@ -12,7 +12,7 @@ Inside the logs directory is a dump of the logs in case Three or Greenpacket wan
 
 If you have tried this script and it works for you please put a like on the comment in this thread https://community.three.co.uk/t5/Broadband/5G-Outdoor-hub-Y5-210MU-connection-Issue/m-p/41466
 
-Here are some mode  threads about the problem 
+Here are some more threads about the network disconnetion issues with the 3/Three/Greenpacket Y5-210MU outdoor router, 
 
    * https://community.three.co.uk/t5/Broadband/Drop-out-problems-with-new-Three-outdoor-hub-Y5-210MU/m-p/42718
    * https://www.ispreview.co.uk/talk/threads/drop-out-problems-with-new-three-outdoor-hub-y5-210mu.42890/
